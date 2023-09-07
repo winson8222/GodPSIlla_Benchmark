@@ -1,0 +1,10 @@
+go 1.21.0
+
+use (
+	./client
+	./gateway
+	./middleman
+	./testposterservice
+	./tests
+	./testviewerservice
+)
