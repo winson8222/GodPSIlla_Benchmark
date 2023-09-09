@@ -1,6 +1,6 @@
 module middleman
 
-go 1.21.0
+go 1.20
 
 require (
 	github.com/cloudwego/hertz v0.6.8

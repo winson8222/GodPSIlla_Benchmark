@@ -1,6 +1,6 @@
 module gateway
 
-go 1.21.0
+go 1.20
 
 require (
 	github.com/apache/thrift v0.19.0
