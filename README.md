@@ -15,7 +15,7 @@ which makes a thrift request to the TestViewerService and TestPosterService
 
 ### Setting up the project
 
-1. Run `go build [module name]` for the client, gateway, middleman, testviewerservice and testposterservice
+1. Run binary (./{module name} for MacOS, ./{module name}.exe for Windows) for the client, gateway, middleman, testviewerservice and testposterservice
 2. Run the binaries in all the folders to start up all the components
 3. Ensure that the etcd cluster is running
 4. Ensure that port 3001, 7999, 8003, 8002, 8888 are kept clear for testing
