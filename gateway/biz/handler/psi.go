@@ -110,6 +110,7 @@ func extractValueAsMap(jsonResponse []byte) []string {
 	// Unmarshal the JSON string to remove Go string escaping
 	var unescapedJSON string
 	if err := json.Unmarshal(jsonResponse, &unescapedJSON); err != nil {
+		fmt.Print("1at unmarshall unscaeped JSOn")
 		fmt.Println("Error:", err)
 		return nil
 	}
@@ -117,6 +118,7 @@ func extractValueAsMap(jsonResponse []byte) []string {
 	// Unmarshal the unescaped JSON string to parse the JSON data
 	var data map[string][]string
 	if err := json.Unmarshal([]byte(unescapedJSON), &data); err != nil {
+		fmt.Print("2at unmarshall unscaeped JSOn")
 		fmt.Println("Error:", err)
 		return nil
 	}
